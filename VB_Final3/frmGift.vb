@@ -18,10 +18,6 @@
         If varResult = MsgBoxResult.Yes Then
             lstCart.Items.Add(strMirror)
         End If
-
-
-
-
     End Sub
 
     Private Sub radGlass_Checked(sender As Object, e As EventArgs) Handles radGlass.Click
@@ -31,6 +27,7 @@
             lstCart.Items.Add(strGlass)
 
         End If
+        'ggjg
     End Sub
     Private Sub radMug_Checked(sender As Object, e As EventArgs) Handles radMug.Click
         Dim varResult
