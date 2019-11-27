@@ -1,10 +1,10 @@
 ﻿Public Class frmGift
-    Dim strMirror As String = "Mirror"
-    Dim strGlass As String = "Glass"
-    Dim strMug As String = "Mug"
-    Dim strDinosaur As String = "Dinosaur"
-    Dim strJournal As String = "Journal"
-    Dim strBookmarks As String = "Bookmarks"
+    Dim strMirror As String = "Mirror: 9.99"
+    Dim strGlass As String = "Glass: 9.99"
+    Dim strMug As String = "Mug: 4.57"
+    Dim strDinosaur As String = "Dinosaur: 8.35"
+    Dim strJournal As String = "Journal: 6.99"
+    Dim strBookmarks As String = "Bookmarks: 7.75"
     Dim question As String = "Add to cart?"
     Dim style = MsgBoxStyle.YesNo
 
