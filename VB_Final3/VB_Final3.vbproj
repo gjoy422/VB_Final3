@@ -134,6 +134,12 @@
       <DependentUpon>frmPortal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSign.Designer.vb">
+      <DependentUpon>frmSign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTours.Designer.vb">
       <DependentUpon>frmTours.vb</DependentUpon>
     </Compile>
@@ -177,6 +183,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPortal.resx">
       <DependentUpon>frmPortal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSign.resx">
+      <DependentUpon>frmSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTours.resx">
+      <DependentUpon>frmTours.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -38,6 +38,8 @@ Partial Class frmGift
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lstCart = New System.Windows.Forms.ListBox()
         Me.btnReturn = New System.Windows.Forms.Button()
+        Me.lstTotal = New System.Windows.Forms.ListBox()
+        Me.lblTotal = New System.Windows.Forms.Label()
         CType(Me.picMug, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMirror, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDinosaur, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -173,7 +175,7 @@ Partial Class frmGift
         'lstCart
         '
         Me.lstCart.FormattingEnabled = True
-        Me.lstCart.Location = New System.Drawing.Point(417, 46)
+        Me.lstCart.Location = New System.Drawing.Point(397, 46)
         Me.lstCart.Name = "lstCart"
         Me.lstCart.Size = New System.Drawing.Size(301, 316)
         Me.lstCart.TabIndex = 14
@@ -187,11 +189,30 @@ Partial Class frmGift
         Me.btnReturn.Text = "Return to Interactive Page"
         Me.btnReturn.UseVisualStyleBackColor = True
         '
+        'lstTotal
+        '
+        Me.lstTotal.FormattingEnabled = True
+        Me.lstTotal.Location = New System.Drawing.Point(607, 332)
+        Me.lstTotal.Name = "lstTotal"
+        Me.lstTotal.Size = New System.Drawing.Size(91, 30)
+        Me.lstTotal.TabIndex = 16
+        '
+        'lblTotal
+        '
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Location = New System.Drawing.Point(604, 365)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(39, 13)
+        Me.lblTotal.TabIndex = 17
+        Me.lblTotal.Text = "Label1"
+        '
         'frmGift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTotal)
+        Me.Controls.Add(Me.lstTotal)
         Me.Controls.Add(Me.btnReturn)
         Me.Controls.Add(Me.lstCart)
         Me.Controls.Add(Me.lblTitle)
@@ -235,4 +256,6 @@ Partial Class frmGift
     Friend WithEvents lblTitle As Label
     Friend WithEvents lstCart As ListBox
     Friend WithEvents btnReturn As Button
+    Friend WithEvents lstTotal As ListBox
+    Friend WithEvents lblTotal As Label
 End Class

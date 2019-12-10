@@ -1,12 +1,22 @@
 ﻿Public Class frmGift
-    Dim strMirror As String = "Mirror: 9.99"
-    Dim strGlass As String = "Glass: 9.99"
-    Dim strMug As String = "Mug: 4.57"
-    Dim strDinosaur As String = "Dinosaur: 8.35"
-    Dim strJournal As String = "Journal: 6.99"
-    Dim strBookmarks As String = "Bookmarks: 7.75"
+    Dim strMirror As String = "Mirror: $9.99"
+    Dim strGlass As String = "Glass: $9.99"
+    Dim strMug As String = "Mug: $4.57"
+    Dim strDinosaur As String = "Dinosaur: $8.35"
+    Dim strJournal As String = "Journal: $6.99"
+    Dim strBookmarks As String = "Bookmarks: $7.75"
     Dim question As String = "Add to cart?"
     Dim style = MsgBoxStyle.YesNo
+    Dim decSales As Decimal = 0
+    Dim decTotal As Decimal = 0
+    Dim decMirror = 9.99
+    Dim decGlass = 9.99
+    Dim decMug = 4.57
+    Dim decDinosaur = 8.35
+    Dim decJournal = 6.99
+    Dim decBookmarks = 7.75
+
+
 
     Private Sub frmGift_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblTitle.Text = frmPortal.txtGuest.Text + " 's Shopping Cart"
@@ -17,7 +27,9 @@
         varResult = MsgBox(question, style, "Cart")
         If varResult = MsgBoxResult.Yes Then
             lstCart.Items.Add(strMirror)
+            lblTotal.Text = decMirror
         End If
+
     End Sub
 
     Private Sub radGlass_Checked(sender As Object, e As EventArgs) Handles radGlass.Click
@@ -25,6 +37,7 @@
         varResult = MsgBox(question, style, "Cart")
         If varResult = MsgBoxResult.Yes Then
             lstCart.Items.Add(strGlass)
+
 
         End If
     End Sub
@@ -61,4 +74,7 @@
         frmInteractive.Show()
     End Sub
 
+    Private Sub lstCart_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstCart.SelectedIndexChanged
+
+    End Sub
 End Class
