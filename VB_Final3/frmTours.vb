@@ -10,7 +10,7 @@
             lblTitle.Text = frmPortal.txtGuest.Text + ", these are the events on " & e.Start.ToShortDateString() & ". 
 Please select ONE tour. 
 All tours are scheduled to begin at 4 p.m. est."
-            lblNatural.Text = frmPortal.txtGuest.Text + ", you selected for the Natural History Tour on " & e.Start.ToShortDateString & "."
+            lblNatural.Text = frmPortal.txtGuest.Text + ", you selected the Natural History Tour on " & e.Start.ToShortDateString & "."
             lblAntiquities.Text = frmPortal.txtGuest.Text + ", you selected the Antiquities Tour on " & e.Start.ToShortDateString & "."
             lblClassical.Text = frmPortal.txtGuest.Text + ", you selected Classical History Tour on " & e.Start.ToShortDateString & "."
             chkTour.Visible = True
@@ -40,6 +40,7 @@ All tours are scheduled to begin at 4 p.m. est."
         If chkTour.Checked = True Then
 
         End If
+        Me.Close()
         frmSign.Show()
 
     End Sub
