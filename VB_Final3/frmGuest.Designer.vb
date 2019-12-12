@@ -26,7 +26,7 @@ Partial Class frmGuest
         Me.lblNew2 = New System.Windows.Forms.Label()
         Me.lblMission = New System.Windows.Forms.Label()
         Me.btnExplore = New System.Windows.Forms.Button()
-        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.btnAccount = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblNew2
@@ -61,15 +61,15 @@ Partial Class frmGuest
         Me.btnExplore.Text = "Explore "
         Me.btnExplore.UseVisualStyleBackColor = True
         '
-        'btnRegister
+        'btnAccount
         '
-        Me.btnRegister.Font = New System.Drawing.Font("Orator Std", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegister.Location = New System.Drawing.Point(638, 301)
-        Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(119, 50)
-        Me.btnRegister.TabIndex = 21
-        Me.btnRegister.Text = "Create an account"
-        Me.btnRegister.UseVisualStyleBackColor = True
+        Me.btnAccount.Font = New System.Drawing.Font("Orator Std", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAccount.Location = New System.Drawing.Point(638, 301)
+        Me.btnAccount.Name = "btnAccount"
+        Me.btnAccount.Size = New System.Drawing.Size(119, 50)
+        Me.btnAccount.TabIndex = 21
+        Me.btnAccount.Text = "Create an account"
+        Me.btnAccount.UseVisualStyleBackColor = True
         '
         'frmGuest
         '
@@ -79,7 +79,7 @@ Partial Class frmGuest
         Me.BackgroundImage = Global.VB_Final3.My.Resources.Resources.natural_history_musuem
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnRegister)
+        Me.Controls.Add(Me.btnAccount)
         Me.Controls.Add(Me.btnExplore)
         Me.Controls.Add(Me.lblMission)
         Me.Controls.Add(Me.lblNew2)
@@ -94,5 +94,5 @@ Partial Class frmGuest
     Friend WithEvents lblNew2 As Label
     Friend WithEvents lblMission As Label
     Friend WithEvents btnExplore As Button
-    Friend WithEvents btnRegister As Button
+    Friend WithEvents btnAccount As Button
 End Class

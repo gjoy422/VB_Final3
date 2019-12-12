@@ -35,8 +35,8 @@ Partial Class frmSign
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblFinal = New System.Windows.Forms.Label()
         Me.grpFinal = New System.Windows.Forms.GroupBox()
-        Me.lblFinish = New System.Windows.Forms.Label()
         Me.btnInteractive = New System.Windows.Forms.Button()
+        Me.lblFinish = New System.Windows.Forms.Label()
         CType(Me.picNatural, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpList.SuspendLayout()
         Me.grpFinal.SuspendLayout()
@@ -82,9 +82,8 @@ Partial Class frmSign
         Me.lblSign.Font = New System.Drawing.Font("Orator Std", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSign.Location = New System.Drawing.Point(33, 18)
         Me.lblSign.Name = "lblSign"
-        Me.lblSign.Size = New System.Drawing.Size(78, 25)
+        Me.lblSign.Size = New System.Drawing.Size(0, 25)
         Me.lblSign.TabIndex = 11
-        Me.lblSign.Text = "Label2"
         '
         'btnCalculate
         '
@@ -162,6 +161,15 @@ Partial Class frmSign
         Me.grpFinal.Text = "Thank You!"
         Me.grpFinal.Visible = False
         '
+        'btnInteractive
+        '
+        Me.btnInteractive.Location = New System.Drawing.Point(334, 419)
+        Me.btnInteractive.Name = "btnInteractive"
+        Me.btnInteractive.Size = New System.Drawing.Size(111, 30)
+        Me.btnInteractive.TabIndex = 1
+        Me.btnInteractive.Text = "Explore"
+        Me.btnInteractive.UseVisualStyleBackColor = True
+        '
         'lblFinish
         '
         Me.lblFinish.AutoSize = True
@@ -171,15 +179,6 @@ Partial Class frmSign
         Me.lblFinish.TabIndex = 0
         Me.lblFinish.Text = "You're all set! " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To continue exploring, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "click on the ""Explore"" button."
         Me.lblFinish.Visible = False
-        '
-        'btnInteractive
-        '
-        Me.btnInteractive.Location = New System.Drawing.Point(334, 419)
-        Me.btnInteractive.Name = "btnInteractive"
-        Me.btnInteractive.Size = New System.Drawing.Size(111, 30)
-        Me.btnInteractive.TabIndex = 1
-        Me.btnInteractive.Text = "Explore"
-        Me.btnInteractive.UseVisualStyleBackColor = True
         '
         'frmSign
         '

@@ -23,6 +23,9 @@ Partial Class frmTours
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.grpTour = New System.Windows.Forms.GroupBox()
+        Me.lblClassical = New System.Windows.Forms.Label()
+        Me.lblAntiquities = New System.Windows.Forms.Label()
+        Me.lblNatural = New System.Windows.Forms.Label()
         Me.cldTour = New System.Windows.Forms.MonthCalendar()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblIntro = New System.Windows.Forms.Label()
@@ -32,9 +35,6 @@ Partial Class frmTours
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.chkTour2 = New System.Windows.Forms.CheckBox()
         Me.chkTour = New System.Windows.Forms.CheckBox()
-        Me.lblNatural = New System.Windows.Forms.Label()
-        Me.lblAntiquities = New System.Windows.Forms.Label()
-        Me.lblClassical = New System.Windows.Forms.Label()
         Me.grpTour.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -51,6 +51,36 @@ Partial Class frmTours
         Me.grpTour.Size = New System.Drawing.Size(456, 352)
         Me.grpTour.TabIndex = 0
         Me.grpTour.TabStop = False
+        '
+        'lblClassical
+        '
+        Me.lblClassical.AutoSize = True
+        Me.lblClassical.Location = New System.Drawing.Point(303, 287)
+        Me.lblClassical.Name = "lblClassical"
+        Me.lblClassical.Size = New System.Drawing.Size(39, 13)
+        Me.lblClassical.TabIndex = 11
+        Me.lblClassical.Text = "Label1"
+        Me.lblClassical.Visible = False
+        '
+        'lblAntiquities
+        '
+        Me.lblAntiquities.AutoSize = True
+        Me.lblAntiquities.Location = New System.Drawing.Point(197, 264)
+        Me.lblAntiquities.Name = "lblAntiquities"
+        Me.lblAntiquities.Size = New System.Drawing.Size(39, 13)
+        Me.lblAntiquities.TabIndex = 10
+        Me.lblAntiquities.Text = "Label1"
+        Me.lblAntiquities.Visible = False
+        '
+        'lblNatural
+        '
+        Me.lblNatural.AutoSize = True
+        Me.lblNatural.Location = New System.Drawing.Point(37, 264)
+        Me.lblNatural.Name = "lblNatural"
+        Me.lblNatural.Size = New System.Drawing.Size(39, 13)
+        Me.lblNatural.TabIndex = 9
+        Me.lblNatural.Text = "Label1"
+        Me.lblNatural.Visible = False
         '
         'cldTour
         '
@@ -99,6 +129,7 @@ Partial Class frmTours
         Me.btnSelect.TabIndex = 4
         Me.btnSelect.Text = "Select"
         Me.btnSelect.UseVisualStyleBackColor = True
+        Me.btnSelect.Visible = False
         '
         'chkTour3
         '
@@ -142,36 +173,6 @@ Partial Class frmTours
         Me.chkTour.Text = "CheckBox1"
         Me.chkTour.UseVisualStyleBackColor = True
         Me.chkTour.Visible = False
-        '
-        'lblNatural
-        '
-        Me.lblNatural.AutoSize = True
-        Me.lblNatural.Location = New System.Drawing.Point(37, 264)
-        Me.lblNatural.Name = "lblNatural"
-        Me.lblNatural.Size = New System.Drawing.Size(39, 13)
-        Me.lblNatural.TabIndex = 9
-        Me.lblNatural.Text = "Label1"
-        Me.lblNatural.Visible = False
-        '
-        'lblAntiquities
-        '
-        Me.lblAntiquities.AutoSize = True
-        Me.lblAntiquities.Location = New System.Drawing.Point(197, 264)
-        Me.lblAntiquities.Name = "lblAntiquities"
-        Me.lblAntiquities.Size = New System.Drawing.Size(39, 13)
-        Me.lblAntiquities.TabIndex = 10
-        Me.lblAntiquities.Text = "Label1"
-        Me.lblAntiquities.Visible = False
-        '
-        'lblClassical
-        '
-        Me.lblClassical.AutoSize = True
-        Me.lblClassical.Location = New System.Drawing.Point(303, 287)
-        Me.lblClassical.Name = "lblClassical"
-        Me.lblClassical.Size = New System.Drawing.Size(39, 13)
-        Me.lblClassical.TabIndex = 11
-        Me.lblClassical.Text = "Label1"
-        Me.lblClassical.Visible = False
         '
         'frmTours
         '

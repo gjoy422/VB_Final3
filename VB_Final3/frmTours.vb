@@ -19,10 +19,9 @@ All tours are scheduled to begin at 4 p.m. est."
             chkTour.Text = "Natural History Tour"
             chkTour2.Text = "Antiquities Tour"
             chkTour3.Text = "Classical Wing Tour"
-            If chkTour.Checked = True Then
-                frmNatural.Show()
+            btnSelect.Visible = True
 
-            End If
+
         Else chkTour.Visible = True
             lblTitle.Text = frmPortal.txtGuest.Text + ", these are the events on " & e.Start.ToShortDateString() & ". "
             chkTour.Text = "There are no tours available on this date."

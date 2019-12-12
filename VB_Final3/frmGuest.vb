@@ -5,5 +5,8 @@
     Private Sub btnExplore_Click(sender As Object, e As EventArgs) Handles btnExplore.Click
         frmInteractive.Show()
     End Sub
+    Private Sub btnAccount_Click(sender As Object, e As EventArgs) Handles btnAccount.Click
+        frmAccount.Show()
+    End Sub
 
 End Class

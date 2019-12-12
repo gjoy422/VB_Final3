@@ -7,6 +7,9 @@
 
 
     Private Sub frmSign_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        txtPeople.Select()
+
         If frmTours.chkTour.Checked = True Then
             lblSign.Text = frmTours.lblNatural.Text
         End If
@@ -37,6 +40,8 @@
             lblCost.Text = "The total cost for " & txtPeople.Text & " people is $" & decCost & "."
         ElseIf txtPromo.Text IsNot strPromo Then
             grpList.Visible = False
+            txtPeople.Select()
+            txtPromo.Clear()
             MsgBox(strPhrase, , "Error")
 
         End If
@@ -52,6 +57,7 @@
         End If
         If vb = DialogResult.No Then
             grpList.Visible = False
+            txtPeople.Select()
         End If
     End Sub
 
