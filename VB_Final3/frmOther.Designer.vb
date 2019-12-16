@@ -26,14 +26,20 @@ Partial Class frmOther
         Me.grpCustomer = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.grpComplaint = New System.Windows.Forms.GroupBox()
-        Me.lblComplaint = New System.Windows.Forms.Label()
+        Me.btnSend = New System.Windows.Forms.Button()
+        Me.Complaints = New System.Windows.Forms.ListBox()
         Me.txtComplaint = New System.Windows.Forms.TextBox()
-        Me.grpAccount = New System.Windows.Forms.GroupBox()
-        Me.lblAccount = New System.Windows.Forms.Label()
+        Me.lblComplaint = New System.Windows.Forms.Label()
+        Me.grpAccounts = New System.Windows.Forms.GroupBox()
         Me.btnAccount = New System.Windows.Forms.Button()
+        Me.lblAccount = New System.Windows.Forms.Label()
+        Me.grpManager = New System.Windows.Forms.GroupBox()
+        Me.btnCall = New System.Windows.Forms.Button()
+        Me.lblManager = New System.Windows.Forms.Label()
         Me.grpCustomer.SuspendLayout()
         Me.grpComplaint.SuspendLayout()
-        Me.grpAccount.SuspendLayout()
+        Me.grpAccounts.SuspendLayout()
+        Me.grpManager.SuspendLayout()
         Me.SuspendLayout()
         '
         'cboOther
@@ -44,10 +50,10 @@ Partial Class frmOther
         Me.cboOther.Name = "cboOther"
         Me.cboOther.Size = New System.Drawing.Size(192, 33)
         Me.cboOther.TabIndex = 0
+        Me.cboOther.Text = "Select"
         '
         'grpCustomer
         '
-        Me.grpCustomer.Controls.Add(Me.grpComplaint)
         Me.grpCustomer.Controls.Add(Me.Label1)
         Me.grpCustomer.Location = New System.Drawing.Point(251, 54)
         Me.grpCustomer.Name = "grpCustomer"
@@ -55,6 +61,7 @@ Partial Class frmOther
         Me.grpCustomer.TabIndex = 1
         Me.grpCustomer.TabStop = False
         Me.grpCustomer.Text = "Customer Service"
+        Me.grpCustomer.Visible = False
         '
         'Label1
         '
@@ -68,15 +75,47 @@ Partial Class frmOther
         '
         'grpComplaint
         '
-        Me.grpComplaint.Controls.Add(Me.grpAccount)
+        Me.grpComplaint.Controls.Add(Me.btnSend)
+        Me.grpComplaint.Controls.Add(Me.Complaints)
         Me.grpComplaint.Controls.Add(Me.txtComplaint)
         Me.grpComplaint.Controls.Add(Me.lblComplaint)
-        Me.grpComplaint.Location = New System.Drawing.Point(0, 0)
+        Me.grpComplaint.Location = New System.Drawing.Point(245, 54)
         Me.grpComplaint.Name = "grpComplaint"
-        Me.grpComplaint.Size = New System.Drawing.Size(611, 324)
+        Me.grpComplaint.Size = New System.Drawing.Size(611, 371)
         Me.grpComplaint.TabIndex = 2
         Me.grpComplaint.TabStop = False
         Me.grpComplaint.Text = "Complaint"
+        Me.grpComplaint.Visible = False
+        '
+        'btnSend
+        '
+        Me.btnSend.Location = New System.Drawing.Point(109, 297)
+        Me.btnSend.Name = "btnSend"
+        Me.btnSend.Size = New System.Drawing.Size(103, 37)
+        Me.btnSend.TabIndex = 3
+        Me.btnSend.Text = "Send"
+        Me.btnSend.UseVisualStyleBackColor = True
+        '
+        'Complaints
+        '
+        Me.Complaints.Font = New System.Drawing.Font("Orator Std", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Complaints.FormattingEnabled = True
+        Me.Complaints.ItemHeight = 17
+        Me.Complaints.Items.AddRange(New Object() {"The sushi was terrible!", "Seriously, what was up ", "with food??!!"})
+        Me.Complaints.Location = New System.Drawing.Point(350, 112)
+        Me.Complaints.Name = "Complaints"
+        Me.Complaints.Size = New System.Drawing.Size(222, 174)
+        Me.Complaints.TabIndex = 2
+        Me.Complaints.Visible = False
+        '
+        'txtComplaint
+        '
+        Me.txtComplaint.Font = New System.Drawing.Font("Orator Std", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtComplaint.Location = New System.Drawing.Point(25, 112)
+        Me.txtComplaint.Multiline = True
+        Me.txtComplaint.Name = "txtComplaint"
+        Me.txtComplaint.Size = New System.Drawing.Size(278, 179)
+        Me.txtComplaint.TabIndex = 1
         '
         'lblComplaint
         '
@@ -87,32 +126,17 @@ Partial Class frmOther
         Me.lblComplaint.TabIndex = 0
         Me.lblComplaint.Text = "Enter your complaint:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'txtComplaint
+        'grpAccounts
         '
-        Me.txtComplaint.Location = New System.Drawing.Point(37, 130)
-        Me.txtComplaint.Name = "txtComplaint"
-        Me.txtComplaint.Size = New System.Drawing.Size(535, 30)
-        Me.txtComplaint.TabIndex = 1
-        '
-        'grpAccount
-        '
-        Me.grpAccount.Controls.Add(Me.btnAccount)
-        Me.grpAccount.Controls.Add(Me.lblAccount)
-        Me.grpAccount.Location = New System.Drawing.Point(0, 0)
-        Me.grpAccount.Name = "grpAccount"
-        Me.grpAccount.Size = New System.Drawing.Size(611, 324)
-        Me.grpAccount.TabIndex = 3
-        Me.grpAccount.TabStop = False
-        Me.grpAccount.Text = "Complaint"
-        '
-        'lblAccount
-        '
-        Me.lblAccount.AutoSize = True
-        Me.lblAccount.Location = New System.Drawing.Point(32, 59)
-        Me.lblAccount.Name = "lblAccount"
-        Me.lblAccount.Size = New System.Drawing.Size(408, 50)
-        Me.lblAccount.TabIndex = 0
-        Me.lblAccount.Text = "Click the ""Account"" button to begin " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "setting up your account:"
+        Me.grpAccounts.Controls.Add(Me.btnAccount)
+        Me.grpAccounts.Controls.Add(Me.lblAccount)
+        Me.grpAccounts.Location = New System.Drawing.Point(233, 54)
+        Me.grpAccounts.Name = "grpAccounts"
+        Me.grpAccounts.Size = New System.Drawing.Size(611, 324)
+        Me.grpAccounts.TabIndex = 3
+        Me.grpAccounts.TabStop = False
+        Me.grpAccounts.Text = "Account"
+        Me.grpAccounts.Visible = False
         '
         'btnAccount
         '
@@ -123,24 +147,68 @@ Partial Class frmOther
         Me.btnAccount.Text = "Account"
         Me.btnAccount.UseVisualStyleBackColor = True
         '
+        'lblAccount
+        '
+        Me.lblAccount.AutoSize = True
+        Me.lblAccount.Location = New System.Drawing.Point(32, 59)
+        Me.lblAccount.Name = "lblAccount"
+        Me.lblAccount.Size = New System.Drawing.Size(408, 50)
+        Me.lblAccount.TabIndex = 0
+        Me.lblAccount.Text = "Click the ""Account"" button to begin " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "setting up your account:"
+        '
+        'grpManager
+        '
+        Me.grpManager.Controls.Add(Me.btnCall)
+        Me.grpManager.Controls.Add(Me.lblManager)
+        Me.grpManager.Location = New System.Drawing.Point(239, 54)
+        Me.grpManager.Name = "grpManager"
+        Me.grpManager.Size = New System.Drawing.Size(611, 324)
+        Me.grpManager.TabIndex = 4
+        Me.grpManager.TabStop = False
+        Me.grpManager.Text = "Speak to a Manager"
+        Me.grpManager.Visible = False
+        '
+        'btnCall
+        '
+        Me.btnCall.Location = New System.Drawing.Point(37, 125)
+        Me.btnCall.Name = "btnCall"
+        Me.btnCall.Size = New System.Drawing.Size(140, 35)
+        Me.btnCall.TabIndex = 1
+        Me.btnCall.Text = "Call"
+        Me.btnCall.UseVisualStyleBackColor = True
+        '
+        'lblManager
+        '
+        Me.lblManager.AutoSize = True
+        Me.lblManager.Location = New System.Drawing.Point(32, 59)
+        Me.lblManager.Name = "lblManager"
+        Me.lblManager.Size = New System.Drawing.Size(419, 50)
+        Me.lblManager.TabIndex = 0
+        Me.lblManager.Text = "Please select the ""Call"" button and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "wait as your line is being connected." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'frmOther
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1467, 865)
+        Me.Controls.Add(Me.grpComplaint)
+        Me.Controls.Add(Me.grpAccounts)
+        Me.Controls.Add(Me.grpManager)
         Me.Controls.Add(Me.grpCustomer)
         Me.Controls.Add(Me.cboOther)
         Me.Font = New System.Drawing.Font("Orator Std", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmOther"
         Me.Text = "frmOther"
         Me.grpCustomer.ResumeLayout(False)
         Me.grpCustomer.PerformLayout()
         Me.grpComplaint.ResumeLayout(False)
         Me.grpComplaint.PerformLayout()
-        Me.grpAccount.ResumeLayout(False)
-        Me.grpAccount.PerformLayout()
+        Me.grpAccounts.ResumeLayout(False)
+        Me.grpAccounts.PerformLayout()
+        Me.grpManager.ResumeLayout(False)
+        Me.grpManager.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -149,9 +217,14 @@ Partial Class frmOther
     Friend WithEvents grpCustomer As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents grpComplaint As GroupBox
-    Friend WithEvents grpAccount As GroupBox
+    Friend WithEvents grpAccounts As GroupBox
     Friend WithEvents btnAccount As Button
     Friend WithEvents lblAccount As Label
     Friend WithEvents txtComplaint As TextBox
     Friend WithEvents lblComplaint As Label
+    Friend WithEvents grpManager As GroupBox
+    Friend WithEvents btnCall As Button
+    Friend WithEvents lblManager As Label
+    Friend WithEvents Complaints As ListBox
+    Friend WithEvents btnSend As Button
 End Class
