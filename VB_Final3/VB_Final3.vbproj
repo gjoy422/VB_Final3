@@ -176,6 +176,9 @@
     <EmbeddedResource Include="frmAntiquities.resx">
       <DependentUpon>frmAntiquities.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClassical.resx">
+      <DependentUpon>frmClassical.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGift.resx">
       <DependentUpon>frmGift.vb</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInteractive.resx">
       <DependentUpon>frmInteractive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNatural.resx">
+      <DependentUpon>frmNatural.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOpen.resx">
       <DependentUpon>frmOpen.vb</DependentUpon>

@@ -1,4 +1,8 @@
 ﻿Public Class frmOther
+    Public Sub frmAccount_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        lblInstruct.Text = frmPortal.txtGuest.Text + ", click the 'Select' bar to view options."
+        picLogo.Visible = True
+    End Sub
     Private Sub cboOther_SelectedIndex(sender As Object, e As EventArgs) Handles cboOther.SelectedIndexChanged
         Dim intCase = cboOther.SelectedIndex
         Select Case intCase
@@ -27,8 +31,11 @@
     Private Sub btnSend_Click(Sender As Object, e As EventArgs) Handles btnSend.Click
         Dim strComplaint As String = txtComplaint.Text
         txtComplaint.Clear()
-        Complaints.Visible = True
-            Complaints.Items.Add(strComplaint)
+        Complaints.Items.Add(strComplaint)
 
+    End Sub
+    Private Sub btnAccount_Click(sender As Object, e As EventArgs) Handles btnAccount.Click
+        Me.Close()
+        frmAccount.Show()
     End Sub
 End Class
