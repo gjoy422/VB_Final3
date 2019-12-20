@@ -8,10 +8,10 @@
         frmAntiquities.Show()
     End Sub
     Private Sub picNatural_Click(sender As Object, e As EventArgs) Handles picNatural.Click
-        frmNatural.Show
+        frmClassical.Show
     End Sub
     Private Sub picClassical_Click(sender As Object, e As EventArgs) Handles picClassical.Click
-        frmClassical.Show
+        frmNaturalHistory.Show
     End Sub
     Private Sub picGift_Show(sender As Object, e As EventArgs) Handles picGift.Click
         frmGift.Show

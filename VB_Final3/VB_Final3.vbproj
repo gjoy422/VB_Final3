@@ -88,10 +88,10 @@
     <Compile Include="frmAntiquities.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClassical.Designer.vb">
-      <DependentUpon>frmClassical.vb</DependentUpon>
+    <Compile Include="frmNatural.Designer.vb">
+      <DependentUpon>frmNatural.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmClassical.vb">
+    <Compile Include="frmNatural.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGift.Designer.vb">
@@ -112,10 +112,10 @@
     <Compile Include="frmInteractive.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNatural.Designer.vb">
-      <DependentUpon>frmNatural.vb</DependentUpon>
+    <Compile Include="frmClassical.Designer.vb">
+      <DependentUpon>frmClassical.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmNatural.vb">
+    <Compile Include="frmClassical.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOpen.Designer.vb">
@@ -177,8 +177,8 @@
     <EmbeddedResource Include="frmAntiquities.resx">
       <DependentUpon>frmAntiquities.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClassical.resx">
-      <DependentUpon>frmClassical.vb</DependentUpon>
+    <EmbeddedResource Include="frmNatural.resx">
+      <DependentUpon>frmNatural.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGift.resx">
       <DependentUpon>frmGift.vb</DependentUpon>
@@ -189,8 +189,8 @@
     <EmbeddedResource Include="frmInteractive.resx">
       <DependentUpon>frmInteractive.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNatural.resx">
-      <DependentUpon>frmNatural.vb</DependentUpon>
+    <EmbeddedResource Include="frmClassical.resx">
+      <DependentUpon>frmClassical.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOpen.resx">
       <DependentUpon>frmOpen.vb</DependentUpon>
