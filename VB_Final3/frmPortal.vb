@@ -4,32 +4,26 @@
     Dim strGuest As String
 
     Public Sub btnSign_Click(sender As Object, e As EventArgs) Handles btnSign.Click
-        strLogin = txtLogin.Text
-        strGuest = txtGuest.Text
+        strLogin = txtLogin.Text 'employee login'
+        strGuest = txtGuest.Text 'guest login'
 
-        If txtLogin.Text = "" Then
+        If txtLogin.Text = "" Then 'if employee login is empty, nothing happens'
             lblNew.Visible = False
         Else
-            frmOpen.Show()
+            frmOpen.Show() 'if employee login is filled, employee portal opens'
             strLogin = txtLogin.Text
             frmOpen.lblNew.Text = "Welcome back " & txtLogin.Text & "!"
         End If
-        If txtGuest.Text = "" Then
+        If txtGuest.Text = "" Then 'if guest login is empty, nothing happens'
             lblNew2.Visible = False
         Else
-            frmGuest.Show()
+            frmGuest.Show() 'if guest login is filled, employee portal opens'
             strGuest = txtGuest.Text
             frmGuest.lblNew2.Text = "Welcome " & txtGuest.Text & "!"
         End If
     End Sub
 
-    Private Sub lblNew2_Click(sender As Object, e As EventArgs) Handles lblNew2.Click
 
-    End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
 
 

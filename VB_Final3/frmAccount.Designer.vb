@@ -211,7 +211,7 @@ Partial Class frmAccount
         Me.Font = New System.Drawing.Font("Orator Std", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAccount"
-        Me.Text = "frmAccount"
+        Me.Text = "Account"
         Me.grpAccount.ResumeLayout(False)
         Me.grpAccount.PerformLayout()
         Me.ResumeLayout(False)

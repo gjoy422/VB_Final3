@@ -183,7 +183,7 @@ Partial Class frmTours
         Me.Controls.Add(Me.lblIntro)
         Me.Controls.Add(Me.grpTour)
         Me.Name = "frmTours"
-        Me.Text = "frmTour"
+        Me.Text = "Tours"
         Me.grpTour.ResumeLayout(False)
         Me.grpTour.PerformLayout()
         Me.Panel1.ResumeLayout(False)

@@ -85,7 +85,7 @@ Partial Class frmGuest
         Me.Controls.Add(Me.lblNew2)
         Me.DoubleBuffered = True
         Me.Name = "frmGuest"
-        Me.Text = "frmGuest"
+        Me.Text = "Mission Statement"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

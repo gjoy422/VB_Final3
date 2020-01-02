@@ -144,7 +144,7 @@ Partial Class frmPortal
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.btnSign)
         Me.Name = "frmPortal"
-        Me.Text = "Form1"
+        Me.Text = "Portal"
         CType(Me.picNatural, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

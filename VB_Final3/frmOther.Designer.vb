@@ -222,7 +222,7 @@ Partial Class frmOther
         Me.Font = New System.Drawing.Font("Orator Std", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmOther"
-        Me.Text = "frmOther"
+        Me.Text = "Other"
         Me.grpCustomer.ResumeLayout(False)
         Me.grpCustomer.PerformLayout()
         Me.grpComplaint.ResumeLayout(False)

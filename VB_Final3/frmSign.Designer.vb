@@ -29,7 +29,6 @@ Partial Class frmSign
         Me.txtPeople = New System.Windows.Forms.TextBox()
         Me.lblSign = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.picNatural = New System.Windows.Forms.PictureBox()
         Me.grpList = New System.Windows.Forms.GroupBox()
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.lblCost = New System.Windows.Forms.Label()
@@ -37,9 +36,10 @@ Partial Class frmSign
         Me.grpFinal = New System.Windows.Forms.GroupBox()
         Me.btnInteractive = New System.Windows.Forms.Button()
         Me.lblFinish = New System.Windows.Forms.Label()
-        CType(Me.picNatural, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picNatural = New System.Windows.Forms.PictureBox()
         Me.grpList.SuspendLayout()
         Me.grpFinal.SuspendLayout()
+        CType(Me.picNatural, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPeople
@@ -94,16 +94,6 @@ Partial Class frmSign
         Me.btnCalculate.TabIndex = 13
         Me.btnCalculate.Text = "Calculate:"
         Me.btnCalculate.UseVisualStyleBackColor = True
-        '
-        'picNatural
-        '
-        Me.picNatural.Image = CType(resources.GetObject("picNatural.Image"), System.Drawing.Image)
-        Me.picNatural.Location = New System.Drawing.Point(465, 74)
-        Me.picNatural.Name = "picNatural"
-        Me.picNatural.Size = New System.Drawing.Size(271, 240)
-        Me.picNatural.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picNatural.TabIndex = 16
-        Me.picNatural.TabStop = False
         '
         'grpList
         '
@@ -180,6 +170,16 @@ Partial Class frmSign
         Me.lblFinish.Text = "You're all set! " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To continue exploring, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "click on the ""Explore"" button."
         Me.lblFinish.Visible = False
         '
+        'picNatural
+        '
+        Me.picNatural.Image = CType(resources.GetObject("picNatural.Image"), System.Drawing.Image)
+        Me.picNatural.Location = New System.Drawing.Point(465, 74)
+        Me.picNatural.Name = "picNatural"
+        Me.picNatural.Size = New System.Drawing.Size(271, 240)
+        Me.picNatural.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picNatural.TabIndex = 16
+        Me.picNatural.TabStop = False
+        '
         'frmSign
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -196,12 +196,12 @@ Partial Class frmSign
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblPeople)
         Me.Name = "frmSign"
-        Me.Text = "frmSign"
-        CType(Me.picNatural, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Sign In"
         Me.grpList.ResumeLayout(False)
         Me.grpList.PerformLayout()
         Me.grpFinal.ResumeLayout(False)
         Me.grpFinal.PerformLayout()
+        CType(Me.picNatural, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

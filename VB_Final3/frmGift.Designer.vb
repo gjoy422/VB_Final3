@@ -23,70 +23,30 @@ Partial Class frmGift
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGift))
-        Me.picMug = New System.Windows.Forms.PictureBox()
-        Me.picMirror = New System.Windows.Forms.PictureBox()
-        Me.picDinosaur = New System.Windows.Forms.PictureBox()
-        Me.picGlass = New System.Windows.Forms.PictureBox()
         Me.radMug = New System.Windows.Forms.RadioButton()
         Me.radMirror = New System.Windows.Forms.RadioButton()
         Me.radDinosaur = New System.Windows.Forms.RadioButton()
         Me.radGlass = New System.Windows.Forms.RadioButton()
-        Me.picJournal = New System.Windows.Forms.PictureBox()
-        Me.picBookmarks = New System.Windows.Forms.PictureBox()
         Me.radJournal = New System.Windows.Forms.RadioButton()
         Me.radBookmarks = New System.Windows.Forms.RadioButton()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lstCart = New System.Windows.Forms.ListBox()
         Me.btnReturn = New System.Windows.Forms.Button()
         Me.lstTotal = New System.Windows.Forms.ListBox()
-        Me.lblTotal = New System.Windows.Forms.Label()
-        CType(Me.picMug, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMirror, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picDinosaur, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picGlass, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picJournal, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picBookmarks = New System.Windows.Forms.PictureBox()
+        Me.picJournal = New System.Windows.Forms.PictureBox()
+        Me.picGlass = New System.Windows.Forms.PictureBox()
+        Me.picDinosaur = New System.Windows.Forms.PictureBox()
+        Me.picMirror = New System.Windows.Forms.PictureBox()
+        Me.picMug = New System.Windows.Forms.PictureBox()
+        Me.btnCheck = New System.Windows.Forms.Button()
         CType(Me.picBookmarks, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picJournal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picGlass, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDinosaur, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMirror, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMug, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'picMug
-        '
-        Me.picMug.Image = CType(resources.GetObject("picMug.Image"), System.Drawing.Image)
-        Me.picMug.Location = New System.Drawing.Point(1, -1)
-        Me.picMug.Name = "picMug"
-        Me.picMug.Size = New System.Drawing.Size(137, 122)
-        Me.picMug.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMug.TabIndex = 0
-        Me.picMug.TabStop = False
-        '
-        'picMirror
-        '
-        Me.picMirror.Image = CType(resources.GetObject("picMirror.Image"), System.Drawing.Image)
-        Me.picMirror.Location = New System.Drawing.Point(135, -1)
-        Me.picMirror.Name = "picMirror"
-        Me.picMirror.Size = New System.Drawing.Size(136, 122)
-        Me.picMirror.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMirror.TabIndex = 1
-        Me.picMirror.TabStop = False
-        '
-        'picDinosaur
-        '
-        Me.picDinosaur.Image = CType(resources.GetObject("picDinosaur.Image"), System.Drawing.Image)
-        Me.picDinosaur.Location = New System.Drawing.Point(1, 151)
-        Me.picDinosaur.Name = "picDinosaur"
-        Me.picDinosaur.Size = New System.Drawing.Size(137, 122)
-        Me.picDinosaur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picDinosaur.TabIndex = 2
-        Me.picDinosaur.TabStop = False
-        '
-        'picGlass
-        '
-        Me.picGlass.Image = CType(resources.GetObject("picGlass.Image"), System.Drawing.Image)
-        Me.picGlass.Location = New System.Drawing.Point(135, 151)
-        Me.picGlass.Name = "picGlass"
-        Me.picGlass.Size = New System.Drawing.Size(137, 122)
-        Me.picGlass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picGlass.TabIndex = 3
-        Me.picGlass.TabStop = False
         '
         'radMug
         '
@@ -123,26 +83,6 @@ Partial Class frmGift
         Me.radGlass.Size = New System.Drawing.Size(14, 13)
         Me.radGlass.TabIndex = 7
         Me.radGlass.UseVisualStyleBackColor = True
-        '
-        'picJournal
-        '
-        Me.picJournal.Image = CType(resources.GetObject("picJournal.Image"), System.Drawing.Image)
-        Me.picJournal.Location = New System.Drawing.Point(1, 302)
-        Me.picJournal.Name = "picJournal"
-        Me.picJournal.Size = New System.Drawing.Size(137, 122)
-        Me.picJournal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picJournal.TabIndex = 8
-        Me.picJournal.TabStop = False
-        '
-        'picBookmarks
-        '
-        Me.picBookmarks.Image = CType(resources.GetObject("picBookmarks.Image"), System.Drawing.Image)
-        Me.picBookmarks.Location = New System.Drawing.Point(134, 302)
-        Me.picBookmarks.Name = "picBookmarks"
-        Me.picBookmarks.Size = New System.Drawing.Size(137, 122)
-        Me.picBookmarks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBookmarks.TabIndex = 9
-        Me.picBookmarks.TabStop = False
         '
         'radJournal
         '
@@ -197,21 +137,82 @@ Partial Class frmGift
         Me.lstTotal.Size = New System.Drawing.Size(91, 30)
         Me.lstTotal.TabIndex = 16
         '
-        'lblTotal
+        'picBookmarks
         '
-        Me.lblTotal.AutoSize = True
-        Me.lblTotal.Location = New System.Drawing.Point(604, 365)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(39, 13)
-        Me.lblTotal.TabIndex = 17
-        Me.lblTotal.Text = "Label1"
+        Me.picBookmarks.Image = CType(resources.GetObject("picBookmarks.Image"), System.Drawing.Image)
+        Me.picBookmarks.Location = New System.Drawing.Point(134, 302)
+        Me.picBookmarks.Name = "picBookmarks"
+        Me.picBookmarks.Size = New System.Drawing.Size(137, 122)
+        Me.picBookmarks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBookmarks.TabIndex = 9
+        Me.picBookmarks.TabStop = False
+        '
+        'picJournal
+        '
+        Me.picJournal.Image = CType(resources.GetObject("picJournal.Image"), System.Drawing.Image)
+        Me.picJournal.Location = New System.Drawing.Point(1, 302)
+        Me.picJournal.Name = "picJournal"
+        Me.picJournal.Size = New System.Drawing.Size(137, 122)
+        Me.picJournal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picJournal.TabIndex = 8
+        Me.picJournal.TabStop = False
+        '
+        'picGlass
+        '
+        Me.picGlass.Image = CType(resources.GetObject("picGlass.Image"), System.Drawing.Image)
+        Me.picGlass.Location = New System.Drawing.Point(135, 151)
+        Me.picGlass.Name = "picGlass"
+        Me.picGlass.Size = New System.Drawing.Size(137, 122)
+        Me.picGlass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picGlass.TabIndex = 3
+        Me.picGlass.TabStop = False
+        '
+        'picDinosaur
+        '
+        Me.picDinosaur.Image = CType(resources.GetObject("picDinosaur.Image"), System.Drawing.Image)
+        Me.picDinosaur.Location = New System.Drawing.Point(1, 151)
+        Me.picDinosaur.Name = "picDinosaur"
+        Me.picDinosaur.Size = New System.Drawing.Size(137, 122)
+        Me.picDinosaur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picDinosaur.TabIndex = 2
+        Me.picDinosaur.TabStop = False
+        '
+        'picMirror
+        '
+        Me.picMirror.Image = CType(resources.GetObject("picMirror.Image"), System.Drawing.Image)
+        Me.picMirror.Location = New System.Drawing.Point(135, -1)
+        Me.picMirror.Name = "picMirror"
+        Me.picMirror.Size = New System.Drawing.Size(136, 122)
+        Me.picMirror.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMirror.TabIndex = 1
+        Me.picMirror.TabStop = False
+        '
+        'picMug
+        '
+        Me.picMug.Image = CType(resources.GetObject("picMug.Image"), System.Drawing.Image)
+        Me.picMug.Location = New System.Drawing.Point(1, -1)
+        Me.picMug.Name = "picMug"
+        Me.picMug.Size = New System.Drawing.Size(137, 122)
+        Me.picMug.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMug.TabIndex = 0
+        Me.picMug.TabStop = False
+        '
+        'btnCheck
+        '
+        Me.btnCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCheck.Location = New System.Drawing.Point(573, 368)
+        Me.btnCheck.Name = "btnCheck"
+        Me.btnCheck.Size = New System.Drawing.Size(125, 32)
+        Me.btnCheck.TabIndex = 17
+        Me.btnCheck.Text = "Check Out"
+        Me.btnCheck.UseVisualStyleBackColor = True
         '
         'frmGift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lblTotal)
+        Me.Controls.Add(Me.btnCheck)
         Me.Controls.Add(Me.lstTotal)
         Me.Controls.Add(Me.btnReturn)
         Me.Controls.Add(Me.lstCart)
@@ -229,13 +230,13 @@ Partial Class frmGift
         Me.Controls.Add(Me.picMirror)
         Me.Controls.Add(Me.picMug)
         Me.Name = "frmGift"
-        Me.Text = "frmGift"
-        CType(Me.picMug, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMirror, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picDinosaur, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picGlass, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picJournal, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Gift"
         CType(Me.picBookmarks, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picJournal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picGlass, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDinosaur, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMirror, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMug, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -257,5 +258,5 @@ Partial Class frmGift
     Friend WithEvents lstCart As ListBox
     Friend WithEvents btnReturn As Button
     Friend WithEvents lstTotal As ListBox
-    Friend WithEvents lblTotal As Label
+    Friend WithEvents btnCheck As Button
 End Class

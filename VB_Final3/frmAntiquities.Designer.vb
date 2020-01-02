@@ -24,18 +24,18 @@ Partial Class frmAntiquities
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAntiquities))
         Me.cboSelect = New System.Windows.Forms.ComboBox()
-        Me.picEgyptian = New System.Windows.Forms.PictureBox()
         Me.lblEgyptian = New System.Windows.Forms.Label()
         Me.lblRoman = New System.Windows.Forms.Label()
         Me.lblGreek = New System.Windows.Forms.Label()
-        Me.picRoman = New System.Windows.Forms.PictureBox()
-        Me.picGreek = New System.Windows.Forms.PictureBox()
         Me.lblGreeks = New System.Windows.Forms.Label()
         Me.lblAntiquities = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
-        CType(Me.picEgyptian, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picRoman, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picGreek = New System.Windows.Forms.PictureBox()
+        Me.picRoman = New System.Windows.Forms.PictureBox()
+        Me.picEgyptian = New System.Windows.Forms.PictureBox()
         CType(Me.picGreek, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picRoman, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picEgyptian, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cboSelect
@@ -49,17 +49,6 @@ Partial Class frmAntiquities
         Me.cboSelect.Size = New System.Drawing.Size(163, 25)
         Me.cboSelect.TabIndex = 0
         Me.cboSelect.Text = "Select an exhibit:"
-        '
-        'picEgyptian
-        '
-        Me.picEgyptian.Image = CType(resources.GetObject("picEgyptian.Image"), System.Drawing.Image)
-        Me.picEgyptian.Location = New System.Drawing.Point(332, 12)
-        Me.picEgyptian.Name = "picEgyptian"
-        Me.picEgyptian.Size = New System.Drawing.Size(193, 211)
-        Me.picEgyptian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picEgyptian.TabIndex = 1
-        Me.picEgyptian.TabStop = False
-        Me.picEgyptian.Visible = False
         '
         'lblEgyptian
         '
@@ -92,29 +81,6 @@ Partial Class frmAntiquities
         Me.lblGreek.Name = "lblGreek"
         Me.lblGreek.Size = New System.Drawing.Size(0, 13)
         Me.lblGreek.TabIndex = 5
-        '
-        'picRoman
-        '
-        Me.picRoman.Image = CType(resources.GetObject("picRoman.Image"), System.Drawing.Image)
-        Me.picRoman.Location = New System.Drawing.Point(332, 12)
-        Me.picRoman.Name = "picRoman"
-        Me.picRoman.Size = New System.Drawing.Size(193, 211)
-        Me.picRoman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picRoman.TabIndex = 3
-        Me.picRoman.TabStop = False
-        Me.picRoman.Visible = False
-        '
-        'picGreek
-        '
-        Me.picGreek.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picGreek.Image = CType(resources.GetObject("picGreek.Image"), System.Drawing.Image)
-        Me.picGreek.Location = New System.Drawing.Point(332, 12)
-        Me.picGreek.Name = "picGreek"
-        Me.picGreek.Size = New System.Drawing.Size(193, 211)
-        Me.picGreek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picGreek.TabIndex = 6
-        Me.picGreek.TabStop = False
-        Me.picGreek.Visible = False
         '
         'lblGreeks
         '
@@ -151,6 +117,40 @@ Partial Class frmAntiquities
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
+        'picGreek
+        '
+        Me.picGreek.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picGreek.Image = CType(resources.GetObject("picGreek.Image"), System.Drawing.Image)
+        Me.picGreek.Location = New System.Drawing.Point(332, 12)
+        Me.picGreek.Name = "picGreek"
+        Me.picGreek.Size = New System.Drawing.Size(193, 211)
+        Me.picGreek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picGreek.TabIndex = 6
+        Me.picGreek.TabStop = False
+        Me.picGreek.Visible = False
+        '
+        'picRoman
+        '
+        Me.picRoman.Image = CType(resources.GetObject("picRoman.Image"), System.Drawing.Image)
+        Me.picRoman.Location = New System.Drawing.Point(332, 12)
+        Me.picRoman.Name = "picRoman"
+        Me.picRoman.Size = New System.Drawing.Size(193, 211)
+        Me.picRoman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picRoman.TabIndex = 3
+        Me.picRoman.TabStop = False
+        Me.picRoman.Visible = False
+        '
+        'picEgyptian
+        '
+        Me.picEgyptian.Image = CType(resources.GetObject("picEgyptian.Image"), System.Drawing.Image)
+        Me.picEgyptian.Location = New System.Drawing.Point(332, 12)
+        Me.picEgyptian.Name = "picEgyptian"
+        Me.picEgyptian.Size = New System.Drawing.Size(193, 211)
+        Me.picEgyptian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picEgyptian.TabIndex = 1
+        Me.picEgyptian.TabStop = False
+        Me.picEgyptian.Visible = False
+        '
         'frmAntiquities
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,10 +170,10 @@ Partial Class frmAntiquities
         Me.Controls.Add(Me.cboSelect)
         Me.DoubleBuffered = True
         Me.Name = "frmAntiquities"
-        Me.Text = "frmAntiquities"
-        CType(Me.picEgyptian, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picRoman, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Antiquities"
         CType(Me.picGreek, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picRoman, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picEgyptian, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

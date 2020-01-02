@@ -8,11 +8,11 @@
         grpAccount.Visible = False
         lblFinal.Visible = True
         btnPortal.Visible = True
-
+        'inputs information'
     End Sub
     Private Sub btnPortal_Click(sender As Object, e As EventArgs) Handles btnPortal.Click
-        Me.Close()
-        frmPortal.Show()
+        Me.Close() 'closes the window'
+        frmPortal.Show() 'opens the Portal page'
     End Sub
 
 

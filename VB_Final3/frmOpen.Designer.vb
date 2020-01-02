@@ -82,9 +82,9 @@ Partial Class frmOpen
         Me.chkClassical.AutoSize = True
         Me.chkClassical.Location = New System.Drawing.Point(6, 76)
         Me.chkClassical.Name = "chkClassical"
-        Me.chkClassical.Size = New System.Drawing.Size(139, 21)
+        Me.chkClassical.Size = New System.Drawing.Size(179, 21)
         Me.chkClassical.TabIndex = 17
-        Me.chkClassical.Text = "Classical Wing"
+        Me.chkClassical.Text = "Archaeology Exhibit"
         Me.chkClassical.UseVisualStyleBackColor = True
         '
         'chkAntiquities
@@ -120,7 +120,7 @@ Partial Class frmOpen
         'radPromotions
         '
         Me.radPromotions.AutoSize = True
-        Me.radPromotions.Location = New System.Drawing.Point(11, 60)
+        Me.radPromotions.Location = New System.Drawing.Point(11, 67)
         Me.radPromotions.Name = "radPromotions"
         Me.radPromotions.Size = New System.Drawing.Size(140, 29)
         Me.radPromotions.TabIndex = 2
@@ -153,9 +153,9 @@ Partial Class frmOpen
         'lblNatural
         '
         Me.lblNatural.AutoSize = True
-        Me.lblNatural.BackColor = System.Drawing.Color.Green
+        Me.lblNatural.BackColor = System.Drawing.Color.White
         Me.lblNatural.Font = New System.Drawing.Font("Orator Std", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNatural.Location = New System.Drawing.Point(221, 4)
+        Me.lblNatural.Location = New System.Drawing.Point(168, 48)
         Me.lblNatural.Name = "lblNatural"
         Me.lblNatural.Size = New System.Drawing.Size(580, 420)
         Me.lblNatural.TabIndex = 28
@@ -195,9 +195,9 @@ Partial Class frmOpen
         'lblPersonal
         '
         Me.lblPersonal.AutoSize = True
-        Me.lblPersonal.BackColor = System.Drawing.Color.RoyalBlue
+        Me.lblPersonal.BackColor = System.Drawing.Color.White
         Me.lblPersonal.Font = New System.Drawing.Font("Orator Std", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPersonal.Location = New System.Drawing.Point(461, 4)
+        Me.lblPersonal.Location = New System.Drawing.Point(168, 51)
         Me.lblPersonal.Name = "lblPersonal"
         Me.lblPersonal.Size = New System.Drawing.Size(340, 105)
         Me.lblPersonal.TabIndex = 31
@@ -207,9 +207,9 @@ Partial Class frmOpen
         'lblPromotions
         '
         Me.lblPromotions.AutoSize = True
-        Me.lblPromotions.BackColor = System.Drawing.Color.Firebrick
+        Me.lblPromotions.BackColor = System.Drawing.Color.White
         Me.lblPromotions.Font = New System.Drawing.Font("Orator Std", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPromotions.Location = New System.Drawing.Point(471, 4)
+        Me.lblPromotions.Location = New System.Drawing.Point(166, 48)
         Me.lblPromotions.Name = "lblPromotions"
         Me.lblPromotions.Size = New System.Drawing.Size(330, 168)
         Me.lblPromotions.TabIndex = 32
@@ -315,7 +315,7 @@ Partial Class frmOpen
         Me.Controls.Add(Me.lblNew)
         Me.DoubleBuffered = True
         Me.Name = "frmOpen"
-        Me.Text = "frmOpen"
+        Me.Text = "Employee Portal"
         Me.grpMessage.ResumeLayout(False)
         Me.grpMessage.PerformLayout()
         Me.grpPortal.ResumeLayout(False)

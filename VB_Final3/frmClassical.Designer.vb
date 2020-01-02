@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmClassical
+Partial Class frmArchaeology
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,7 +27,6 @@ Partial Class frmClassical
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.DirectorySearcher1 = New System.DirectoryServices.DirectorySearcher()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,13 +57,6 @@ Partial Class frmClassical
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
         '
-        'DirectorySearcher1
-        '
-        Me.DirectorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01")
-        Me.DirectorySearcher1.PropertiesToLoad.AddRange(New String() {"Emily Robinson", "Goodwin James", "Alice Rogers", "Emily Dickinson"})
-        Me.DirectorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01")
-        Me.DirectorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01")
-        '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(309, 3)
@@ -72,15 +64,15 @@ Partial Class frmClassical
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 1
         '
-        'frmClassical
+        'frmArchaeology
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.FlowLayoutPanel1)
-        Me.Name = "frmClassical"
-        Me.Text = "frmNatural"
+        Me.Name = "frmArchaeology"
+        Me.Text = "Archaeology Wing"
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.FlowLayoutPanel1.PerformLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -91,5 +83,4 @@ Partial Class frmClassical
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents DirectorySearcher1 As DirectoryServices.DirectorySearcher
 End Class

@@ -194,7 +194,7 @@ Partial Class frmNaturalHistory
         Me.Controls.Add(Me.lblAustralia)
         Me.Controls.Add(Me.lblAfrica)
         Me.Name = "frmNaturalHistory"
-        Me.Text = "frmClassical"
+        Me.Text = "Natural History"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

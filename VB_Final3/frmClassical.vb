@@ -1,4 +1,4 @@
-﻿Public Class frmClassical
+﻿Public Class frmArchaeology
     Private Sub TreeView1_AfterSelect(sender As Object, e As TreeViewEventArgs)
 
     End Sub

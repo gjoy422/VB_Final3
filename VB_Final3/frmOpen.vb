@@ -1,11 +1,11 @@
 ﻿Public Class frmOpen
     Public Sub frmOpen_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblNew.Visible = True
+        lblNew.Visible = True 'displays info from Portal page'
 
     End Sub
 
     Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
-        If radNatural.Checked = True Then
+        If radNatural.Checked = True Then 'displays Natural History mail'
             lblNatural.Visible = True
             btnOpen.Visible = False
             btnClose.Visible = True
@@ -13,7 +13,7 @@
             RichTextBox.Visible = False
             grpPortal.Visible = False
         End If
-        If radPersonal.Checked = True Then
+        If radPersonal.Checked = True Then 'displays personal emails'
             lblPersonal.Visible = True
             btnOpen.Visible = False
             btnClose.Visible = True
@@ -21,7 +21,7 @@
             RichTextBox.Visible = False
             grpPortal.Visible = False
         End If
-        If radPromotions.Checked = True Then
+        If radPromotions.Checked = True Then 'displays promotional emails'
             lblPromotions.Visible = True
             btnOpen.Visible = False
             btnClose.Visible = True
@@ -40,6 +40,7 @@
         grpPortal.Visible = True
     End Sub
     Private Sub btnUpdate_Click(ByVal sender As System.Object, e As EventArgs) Handles btnUpdate.Click
+        'if an option is checked, a label will say that the employee is available on the checked floor'
         Dim str As String
         str = ""
         If chkUnavailable.Checked = True Then
@@ -75,18 +76,8 @@
 
     End Sub
     Private Sub btnOut_Click(sender As Object, e As EventArgs) Handles btnOut.Click
-        Me.Close()
+        Me.Close() 'closes form'
+        frmPortal.Show() 'reopens Portal page'
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblPersonal.Click
-
-    End Sub
-
-    Private Sub lblNatural_Click(sender As Object, e As EventArgs) Handles lblNatural.Click
-
-    End Sub
-
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox.TextChanged
-
-    End Sub
 End Class
